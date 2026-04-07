@@ -8,7 +8,8 @@ export async function fetchCard(name) {
 
   try {
     const res = await fetch(
-      `https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(key)}`
+      `https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(key)}`,
+      { referrerPolicy: 'no-referrer' }
     );
     if (!res.ok) return null;
 

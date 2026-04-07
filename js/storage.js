@@ -5,7 +5,7 @@ export function isRemoteMode() {
 }
 
 export async function loadRemoteData(url) {
-  const res = await fetch(url);
+  const res = await fetch(url, { referrerPolicy: 'no-referrer' });
   if (!res.ok) throw new Error(`Failed to fetch data: ${res.status}`);
   remoteData = await res.json();
   if (!remoteData.players) remoteData.players = [];
