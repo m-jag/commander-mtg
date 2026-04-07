@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commander MTG Leaderboard</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><span>Commander</span> Leaderboard</h1>
+      <p>Track your playgroup's stats</p>
+    </header>
+
+    <!-- Leaderboard -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Standings</h2>
+        <div class="section-actions">
+          <button id="export-btn" class="btn btn-sm btn-outline edit-only">Export</button>
+          <button id="import-btn" class="btn btn-sm btn-outline edit-only">Import</button>
+          <button id="manage-players-btn" class="btn btn-sm btn-outline edit-only">Manage Players</button>
+          <button id="clear-all-btn" class="btn btn-sm btn-outline btn-danger edit-only">Clear All</button>
+        </div>
+      </div>
+      <div id="leaderboard"></div>
+    </section>
+
+    <!-- Add Player -->
+    <section class="section edit-only">
+      <h2>Add Player</h2>
+      <form id="add-player-form" style="margin-top: 0.75rem;">
+        <div class="form-row">
+          <input type="text" id="player-name-input" placeholder="Player name" required autocomplete="off">
+          <input type="text" id="commander-input" placeholder="Commander name (optional)" autocomplete="off">
+          <input type="url" id="deck-url-input" placeholder="Moxfield deck URL (optional)" autocomplete="off">
+          <button type="submit" class="btn">Add</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Record Game -->
+    <section class="section edit-only">
+      <h2>Record Game</h2>
+      <form id="record-game-form" style="margin-top: 0.75rem;">
+        <div class="step-label">
+          <span class="step-number">1</span>
+          Select players <span id="player-count" class="player-count">0 / 4</span>
+        </div>
+        <div id="player-chips" class="chip-grid"></div>
+
+        <div class="step-label">
+          <span class="step-number">2</span>
+          Select the winner
+        </div>
+        <div id="winner-chips" class="chip-grid"></div>
+
+        <div class="form-row" style="margin-top: 1rem;">
+          <input type="date" id="game-date">
+          <button type="submit" class="btn">Record Game</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Game History -->
+    <section class="section">
+      <h2>Game History</h2>
+      <div id="game-history" style="margin-top: 0.75rem;"></div>
+    </section>
+  </div>
+
+  <!-- Manage Players Modal -->
+  <dialog id="manage-players-modal">
+    <div class="modal-header">
+      <h3>Manage Players</h3>
+      <button id="close-manage-modal" class="btn-delete" title="Close">&times;</button>
+    </div>
+    <div id="manage-players-list"></div>
+  </dialog>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

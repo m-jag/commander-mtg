@@ -1,0 +1,111 @@
+{
+  "players": [
+    {
+      "id": "e0b52ac3-47c0-9490-6019-14ebf83fb10f",
+      "name": "Player A",
+      "createdAt": "2026-04-07T04:18:02.963Z"
+    },
+    {
+      "id": "2e9f99b9-5a09-c8d5-64a8-2c690d2df25b",
+      "name": "Player B",
+      "createdAt": "2026-04-07T04:18:08.259Z"
+    },
+    {
+      "id": "d29e48d9-e3d5-12cb-1a77-ff8959e33917",
+      "name": "Player C",
+      "createdAt": "2026-04-07T04:18:12.953Z"
+    },
+    {
+      "id": "d853c801-d834-8e19-a757-83feaf099d75",
+      "name": "Player D",
+      "createdAt": "2026-04-07T04:18:19.364Z"
+    },
+    {
+      "id": "7dc81f6a-71a8-eafa-6efa-65e9c40978ed",
+      "name": "Player E",
+      "createdAt": "2026-04-07T04:18:40.198Z"
+    },
+    {
+      "id": "0b2b7ff8-b578-c260-402e-eb704a632138",
+      "name": "Player F",
+      "createdAt": "2026-04-07T04:18:44.664Z"
+    },
+    {
+      "id": "1bf926ea-8be0-bd5f-c7a7-d82e2b202f86",
+      "name": "Player G",
+      "createdAt": "2026-04-07T04:18:50.377Z"
+    },
+    {
+      "id": "0438d78a-9de4-e316-19f5-987257d8f1f2",
+      "name": "Player H",
+      "createdAt": "2026-04-07T04:19:03.229Z"
+    }
+  ],
+  "games": [
+    {
+      "id": "f9e97e37-e76c-9787-4438-8889ff4385a1",
+      "winnerIds": [
+        "e0b52ac3-47c0-9490-6019-14ebf83fb10f"
+      ],
+      "participantIds": [
+        "e0b52ac3-47c0-9490-6019-14ebf83fb10f",
+        "2e9f99b9-5a09-c8d5-64a8-2c690d2df25b",
+        "d29e48d9-e3d5-12cb-1a77-ff8959e33917",
+        "d853c801-d834-8e19-a757-83feaf099d75"
+      ],
+      "date": "2026-04-07"
+    },
+    {
+      "id": "ae04f327-8fbd-10ac-33d8-0535816aa614",
+      "winnerIds": [
+        "2e9f99b9-5a09-c8d5-64a8-2c690d2df25b"
+      ],
+      "participantIds": [
+        "e0b52ac3-47c0-9490-6019-14ebf83fb10f",
+        "2e9f99b9-5a09-c8d5-64a8-2c690d2df25b",
+        "d29e48d9-e3d5-12cb-1a77-ff8959e33917",
+        "d853c801-d834-8e19-a757-83feaf099d75"
+      ],
+      "date": "2026-04-07"
+    },
+    {
+      "id": "d20d6f2c-02df-b0a1-a428-ea25d9b48406",
+      "winnerIds": [
+        "0438d78a-9de4-e316-19f5-987257d8f1f2"
+      ],
+      "participantIds": [
+        "7dc81f6a-71a8-eafa-6efa-65e9c40978ed",
+        "0b2b7ff8-b578-c260-402e-eb704a632138",
+        "1bf926ea-8be0-bd5f-c7a7-d82e2b202f86",
+        "0438d78a-9de4-e316-19f5-987257d8f1f2"
+      ],
+      "date": "2026-04-07"
+    },
+    {
+      "id": "62f728ba-2740-f085-e525-e7483f6b60d3",
+      "winnerIds": [
+        "0b2b7ff8-b578-c260-402e-eb704a632138"
+      ],
+      "participantIds": [
+        "7dc81f6a-71a8-eafa-6efa-65e9c40978ed",
+        "0b2b7ff8-b578-c260-402e-eb704a632138",
+        "1bf926ea-8be0-bd5f-c7a7-d82e2b202f86",
+        "0438d78a-9de4-e316-19f5-987257d8f1f2"
+      ],
+      "date": "2026-04-07"
+    },
+    {
+      "id": "ed879358-348b-14a5-fae7-d34c78929f58",
+      "winnerIds": [
+        "0438d78a-9de4-e316-19f5-987257d8f1f2"
+      ],
+      "participantIds": [
+        "7dc81f6a-71a8-eafa-6efa-65e9c40978ed",
+        "0b2b7ff8-b578-c260-402e-eb704a632138",
+        "1bf926ea-8be0-bd5f-c7a7-d82e2b202f86",
+        "0438d78a-9de4-e316-19f5-987257d8f1f2"
+      ],
+      "date": "2026-04-07"
+    }
+  ]
+}
