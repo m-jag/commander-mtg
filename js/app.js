@@ -369,7 +369,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       await loadRemoteData(dataUrl);
       enterReadOnlyMode();
     } catch (e) {
-      showToast('Failed to load shared data');
+      if (window.location.protocol === 'https:' && dataUrl.startsWith('http:')) {
+        showToast('Cannot load HTTP data from an HTTPS page. Use an HTTPS data URL.');
+      } else {
+        showToast('Failed to load shared data');
+      }
       console.error(e);
     }
   }
